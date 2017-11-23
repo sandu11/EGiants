@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>City Auto-Complete</title>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  -->
+<script src="./JQLib/jquery-3.2.1.min.js"></script>
+<link href="jquery-ui.css" rel="stylesheet">
+<script src="jquery.js"></script>
+<script src="jquery-ui.js"></script>
+
+<script type="text/javascript">
+	var cityNames= ["Austin","Baltimore","California","Colorado","Chicago","Dallas","Epperson","Florida","Georgetown","Kansas City","Missouri"];
+	$(document).ready(function(){
+		$("#city").autocomplete({source: cityNames});
+	});
+</script>
+</head>
+<body>
+	city: <input id="city" type="text"> 
+
+</body>
+</html>

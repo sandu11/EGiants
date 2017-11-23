@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<!--  <script src="./JQLib/jquery-3.2.1.min.js"></script> this is CDN server-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+
+	$(document).ready(function(){	//ready= document is ready to load, then function is executed
+		$('.myclass').click(function(){	//.myclass= this can also be used instead on button, click on button- onclick event passes
+			$('h2').text('You clicked a button');
+		});
+	});
+	
+	$(document).ready(function effects() {
+		$('#hide').click(function effects() {
+			$('p').hide(1000);	//(()this is used to put the milliseconds you want to take to hide)
+		});
+		$('#show').click(function effects() {
+			$('p').show();
+		});
+		$('#toggle').click(function effects() {
+			$('p').toggle();	//for both hide and show- same button
+		});
+					
+	})
+
+</script>
+</head>
+<body>
+
+	<h2 align="center" class ="myclass">Welcome to JQuery</h2>
+	
+	<p>This line has to change</p>
+	<p></p>
+	
+	<button class ="myclass">Click Me</button>	<!-- b1 is given here for button id only for the click button -->
+	<button id ="hide">hide</button>
+	<button id ="show">show</button>
+	<button id ="toggle">toggle</button>
+</body>
+</html>
